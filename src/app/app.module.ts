@@ -2,15 +2,38 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AboutComponent } from './layout/about/about.component';
+import { ResumeComponent } from './layout/resume/resume.component';
+import { ServicesComponent } from './layout/services/services.component';
+import { ContactComponent } from './layout/contact/contact.component';
+import { PortfolioComponent } from './layout/portfolio/portfolio.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
+    ContactComponent,
+    FooterComponent,
+    HeaderComponent,
+    PortfolioComponent,
+    ResumeComponent,
+    ServicesComponent,
+    SidebarComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    // {
+    //   provide: PERFECT_SCROLLBAR_CONFIG,
+    //   useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+    // }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

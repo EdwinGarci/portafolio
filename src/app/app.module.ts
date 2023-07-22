@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './layout/about/about.component';
@@ -9,8 +10,7 @@ import { ContactComponent } from './layout/contact/contact.component';
 import { PortfolioComponent } from './layout/portfolio/portfolio.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
-import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     PortfolioComponent,
     ResumeComponent,
     ServicesComponent,
-    SidebarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

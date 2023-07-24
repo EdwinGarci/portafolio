@@ -4,13 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './layout/about/about.component';
-import { ResumeComponent } from './layout/resume/resume.component';
-import { ServicesComponent } from './layout/services/services.component';
 import { ContactComponent } from './layout/contact/contact.component';
 import { PortfolioComponent } from './layout/portfolio/portfolio.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { SkillsComponent } from './layout/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +18,9 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     ContactComponent,
     FooterComponent,
     HeaderComponent,
+    SkillsComponent,
+    NavbarComponent,
     PortfolioComponent,
-    ResumeComponent,
-    ServicesComponent,
-    NavbarComponent
   ],
   imports: [
     BrowserModule,
